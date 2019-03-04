@@ -3,6 +3,14 @@ $(document).ready(function() {
 
     $("#nav").hide();
 
+    
+    var x = $(this).width();
+    console.log(x);
+    if (x < 768) {
+        console.log("hide circle");
+        $('.half-circle').hide();
+    }
+
     var clickCounter = 0;
     console.log(clickCounter);
 
