@@ -17,6 +17,34 @@ $(document).ready(function() {
         }
         console.log(clickCounter);
 
+        $("#about-btn").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#section-1").offset().top
+            }, 800);
+            $("#nav").slideUp();
+            $(".menu-item").removeClass("turnblue");
+        });
+        $("#skills-btn").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#skills").offset().top
+            }, 800);
+            $("#nav").slideUp();
+            $(".menu-item").removeClass("turnblue");
+        });
+        $("#projects-btn").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#projects").offset().top
+            }, 800);
+            $("#nav").slideUp();
+            $(".menu-item").removeClass("turnblue");
+        });
+        $("#contact-button").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#contact").offset().top
+            }, 800);
+            $("#nav").slideUp();
+            $(".menu-item").removeClass("turnblue");
+        });
     });
 
     $('#nav-btn-1').click(function(){
@@ -38,6 +66,8 @@ $(document).ready(function() {
             scrollTop: $("#contact").offset().top
         }, 800);
     });
+
+  
 
 
 
