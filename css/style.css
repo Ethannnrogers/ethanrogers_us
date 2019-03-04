@@ -49,7 +49,9 @@ body {
 }
 
 
-
+#section-1 {
+    height: 100vh!important;
+}
 
 .nav-menu {
     height: 100%;
@@ -814,6 +816,42 @@ a {
     }
 }
 
+@media only screen and (max-width: 375px) {
+    #title-name {
+        font-size: 1.7em!important;
+        text-shadow: -5px 2px black!important;
+    }
+    #header-bg {
+        height: 25px;
+        width: 70%;
+        margin-left: 10%;
+        margin-top: -15px;
+    }
+    #typewriter {
+        font-size: 0.6em;
+    }
+    #about h2 {
+        font-size: 2.2em!important;
+    }
+    #skills h2 {
+        font-size: 2.2em!important;
+        margin-top: 25%;
+    }
+    #projects h2 {
+        font-size: 1.3em!important;
+        margin-top: 20%;
+        padding: 0 10% 0 10%;
+    }
+    #projects-2 h2 {
+        font-size: 1.3em!important;
+        margin-top: 20%;
+        padding: 0 10% 0 10%;
+    }
+    .nav-menu {
+        font-size: 2.4em!important;
+        margin-top: 10%;
+    }
+}
 
 
 

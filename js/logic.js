@@ -82,8 +82,8 @@ $(document).ready(function() {
             $("#expert").addClass("fade-in-top");
             $("#expert").removeClass("fade-out-bck");
         }else {
-            $("#expert").addClass("fade-out-bck");
-            $("#expert").removeClass("fade-in-top");
+            // $("#expert").addClass("fade-out-bck");
+            // $("#expert").removeClass("fade-in-top");
         }
         if (x > 768 && y > 800) {
             $("#scratch").addClass("fade-in-top");
@@ -91,10 +91,10 @@ $(document).ready(function() {
             $("#mac").addClass("slide-in-right");
             $("#mac").removeClass("slide-out-right");
         }else {
-            $("#scratch").addClass("fade-out-bck");
-            $("#scratch").removeClass("fade-in-top");
-            $("#mac").addClass("slide-out-right");
-            $("#mac").removeClass("slide-in-right");
+            // $("#scratch").addClass("fade-out-bck");
+            // $("#scratch").removeClass("fade-in-top");
+            // $("#mac").addClass("slide-out-right");
+            // $("#mac").removeClass("slide-in-right");
         }
         if (x > 768 && y > 1480) {
             $("#template").addClass("fade-in-top");
@@ -102,10 +102,10 @@ $(document).ready(function() {
             $("#mac-2").addClass("slide-in-left");
             $("#mac-2").removeClass("slide-out-left");
         }else {
-            $("#template").addClass("fade-out-bck");
-            $("#template").removeClass("fade-in-top");
-            $("#mac-2").addClass("slide-out-left");
-            $("#mac-2").removeClass("slide-in-left");
+            // $("#template").addClass("fade-out-bck");
+            // $("#template").removeClass("fade-in-top");
+            // $("#mac-2").addClass("slide-out-left");
+            // $("#mac-2").removeClass("slide-in-left");
         }
         if (height > 700 && y > 1880) {
             $("#template").addClass("fade-in-top");
@@ -113,10 +113,18 @@ $(document).ready(function() {
             $("#mac-2").addClass("slide-in-left");
             $("#mac-2").removeClass("slide-out-left");
         }else {
-            $("#template").addClass("fade-out-bck");
-            $("#template").removeClass("fade-in-top");
-            $("#mac-2").addClass("slide-out-left");
-            $("#mac-2").removeClass("slide-in-left");
+            // $("#template").addClass("fade-out-bck");
+            // $("#template").removeClass("fade-in-top");
+            // $("#mac-2").addClass("slide-out-left");
+            // $("#mac-2").removeClass("slide-in-left");
+        }
+        if (x < 768) {
+            $("#expert").show();
+            $("#scratch").show();
+            $("#mac").show();
+            $("#mac-2").show();
+            $("template").show();
+            
         }
         
     })
