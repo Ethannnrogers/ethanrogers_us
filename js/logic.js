@@ -3,7 +3,6 @@ $(document).ready(function() {
 
     $("#nav").hide();
 
-    
     var x = $(this).width();
     console.log(x);
     if (x < 768) {
@@ -149,29 +148,6 @@ $(document).ready(function() {
 
 })
 
-
-// $.fn.isVisible = function() {
-//     // Am I visible?
-//     // Height and Width are not explicitly necessary in visibility detection, the bottom, right, top and left are the
-//     // essential checks. If an image is 0x0, it is technically not visible, so it should not be marked as such.
-//     // That is why either width or height have to be > 0.
-//     var rect = this[0].getBoundingClientRect();
-//     return (
-//         (rect.height > 0 || rect.width > 0) &&
-//         rect.bottom >= 0 &&
-//         rect.right >= 0 &&
-//         rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-//         rect.left <= (window.innerWidth || document.documentElement.clientWidth)
-//     );
-// };
-
-
-// if ($('').isVisible()) {
-//     $("#expert").addClass("slide-out-right");
-//     console.log("visible");
-// }else {
-//     $("#expert").removeClass("fade-in-bck");
-// };
 
 
 var TxtType = function(el, toRotate, period) {
